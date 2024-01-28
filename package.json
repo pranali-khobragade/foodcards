@@ -1,11 +1,15 @@
 {
+  "homepage": "https://pranali-khobragade.github.io/foodcards",
   "name": "food",
   "version": "1.0.0",
   "description": "",
   "scripts": {
+   
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
   },
   "author": "pranali",
   "license": "ISC",
@@ -16,6 +20,7 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3"
